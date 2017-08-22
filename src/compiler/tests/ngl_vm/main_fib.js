@@ -21,7 +21,7 @@ var angelic = require ( root + '/main.js' );
 
 function compile_and_run ( text ) {
   var vm = angelic.make ( );
-  vm.set_common_defs_path ( root + '/../common_defs' );
+  vm.set_common_defs_path ( root + '/..' );
   vm.add_library ( 'core', [
     vm.make_exfn ( 0, 'print_float', misc.print ),
     ] );

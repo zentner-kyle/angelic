@@ -27,7 +27,7 @@ var emitter = require ( './emitter.js' );
 var assemble = require ( './assemble.js' );
 var packager = require ( './packager.js' );
 var binary = require ( './binary.js' );
-var factory = require ( '../common/factory' );
+var factory = require ( './factory' );
 var ngl_api = require ( './ngl_api' );
 var buffer = require ( './buffer' );
 
@@ -46,7 +46,7 @@ function make ( ) {
   var a_packager = packager.make ( );
   var modules = string_map.make ( );
   var pkg = null;
-  var common_defs_path = '../common_defs';
+  var common_defs_path = '..';
 
   var cvm = ngl_api.vm_new ( );
 
